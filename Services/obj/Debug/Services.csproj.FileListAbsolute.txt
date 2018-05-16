@@ -1,0 +1,5 @@
+C:\Users\mcaan\Documents\Faisal Khatri\Jobs Coding Challenges\HomeDepot\Code\HomeDepotCode\Services\bin\Debug\Services.dll
+C:\Users\mcaan\Documents\Faisal Khatri\Jobs Coding Challenges\HomeDepot\Code\HomeDepotCode\Services\bin\Debug\Services.pdb
+C:\Users\mcaan\Documents\Faisal Khatri\Jobs Coding Challenges\HomeDepot\Code\HomeDepotCode\Services\obj\Debug\Services.dll
+C:\Users\mcaan\Documents\Faisal Khatri\Jobs Coding Challenges\HomeDepot\Code\HomeDepotCode\Services\obj\Debug\Services.pdb
+C:\Users\mcaan\Documents\Faisal Khatri\Jobs Coding Challenges\HomeDepot\Code\HomeDepotCode\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache

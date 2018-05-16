@@ -1,0 +1,74 @@
+﻿@model UI.Models.HomePageViewModels
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>ELECTRONIC COLOR CODE</h1>
+    <p class="lead">
+        An electronic color code is used to indicate the values or ratings of electronic components, usually for resistors, but also for capacitors, inductors, diodes and others.
+        For more information please <a href="https://en.wikipedia.org/wiki/Electronic_color_code" target="_blank">click here</a>
+    </p>
+
+</div>
+
+    <div class="row">
+        <div class="col-md-8 col-sm-12">
+            <div class="card">
+                <div class="card-header">
+                    Calculate Resistance
+                </div>
+                <div class="card-body">
+                    @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+                    {
+                        <div class="form-group">
+
+                            @Html.LabelFor(model => model.BandAColor)
+                            @Html.DropDownListFor(m => m.SelectedBandA, Model.BandAColor, "-- Select Band A Color --", new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.BandAColor)
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.BandBColor)
+
+                            @Html.DropDownListFor(m => m.SelectedBandB, Model.BandBColor, "-- Select Band B Color --", new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.BandBColor)
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.BandCColor)
+
+                            @Html.DropDownListFor(m => m.SelectedBandC, Model.BandCColor, "-- Select Mutliplier --", new { @class = "form-control" })
+
+                            @Html.ValidationMessageFor(m => m.BandCColor)
+                        </div>
+                        <div class="form-group">
+                        @Html.LabelFor(model => model.BandDColor)
+
+                        @Html.DropDownListFor(m => m.SelectedBandD, Model.BandDColor, "-- Select Tolerance --", new { @class = "form-control" })
+
+
+                    </div>
+                        <input type="submit" class="btn btn-primary" value="Calculate" />
+                    }
+                </div>
+                
+            </div>
+        </div>
+        @if (Model.Result > 0)
+        {<div class="col-md-4 col-sm-12">
+             <div class="card">
+                 <div class="card-header">
+                     Result
+                 </div>
+                 <div class="card">
+                     <div class="card-body">
+                         <h5 class="card-title">@Model.Result</h5>
+                     </div>
+                 </div>
+             </div>
+        </div>
+        }
+    </div>
+    
+
+
+ 
